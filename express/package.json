@@ -5,13 +5,19 @@
   "repository": "ssh://git@github.com/luukrijnbende/node-deno-bun",
   "author": "Luuk Rijnbende",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start:node": "tsc && node dist/index.js",
-    "start:deno": "deno run src/index.ts",
+    "start:deno:compat": "deno run --unstable --compat --allow-env --allow-read src/index.ts",
+    "start:deno:import": "deno run --unstable --compat --allow-env --allow-read --import-map ./import-map.json src/index.ts",
     "start:bun": "bun run src/index.ts"
   },
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "@types/node": "^18.6.4",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }
