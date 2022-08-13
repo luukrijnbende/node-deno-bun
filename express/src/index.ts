@@ -1,9 +1,7 @@
-import { startServer } from "./server";
+import express from "express";
 
-(async function main() {
-    console.log("Starting up!");
+const server = express();
 
-    await startServer();
+server.get("/", (req, res) => res.send("Am I Node, Deno or Bun?"));
 
-    console.log("All done, zoom zoom!");
-})();
+server.listen(3000, () => console.log("Server running on port 3000"));

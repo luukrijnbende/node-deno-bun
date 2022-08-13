@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "start:node": "tsc && node dist/index.js",
-    "start:deno": "deno run --unstable --compat --allow-env --allow-read src/index.ts",
+    "start:deno": "deno run --unstable --compat --allow-all src/index.ts",
     "start:bun": "bun run src/index.ts"
   },
   "devDependencies": {
