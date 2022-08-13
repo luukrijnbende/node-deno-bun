@@ -1,5 +1,5 @@
 # node-deno-bun
-Are Deno and Bun really drop-in replacements for Node?
+Ever since the introduction of Bun (a super fast JavaScript runtime) there are three runtimes to choose from when wanting to develop and run a JavaScript server. Node.js was the one that started it all and most application are made to run on that, but how would those applications fare running on the other runtimes, are they really a drop-in replacement?
 
 ## Versions
 |||
@@ -28,9 +28,11 @@ curl https://bun.sh/install | bash -s bun-v0.1.7
 
 ## Running
 This repo contains several test projects.
-- [A generic express server](express)
-- [A Nuxt app](nuxt)
-- [A Next app](next)
+- [A simple script](script)
+- [A native HTTP server](http)
+- [A simple express server](express)
+- [A Nuxt.js app](nuxt)
+- [A Next.js app](next)
 - [An Angular Universal app](angular-universal)
 
 Each of those projects can be started with the same commands.

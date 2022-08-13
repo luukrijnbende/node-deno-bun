@@ -1,0 +1,17 @@
+{
+  "name": "node-deno-bun-http",
+  "version": "1.0.0",
+  "repository": "ssh://git@github.com/luukrijnbende/node-deno-bun",
+  "author": "Luuk Rijnbende",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start:node": "tsc && node dist/index.js",
+    "start:deno": "deno run --unstable --compat --allow-env --allow-net src/index.ts",
+    "start:bun": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.4",
+    "typescript": "^4.7.4"
+  }
+}
