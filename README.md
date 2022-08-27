@@ -39,17 +39,20 @@ Each of those projects can be started with the same commands.
 ### Node
 ```sh
 yarn install
+yarn build
 yarn start:node
 ```
 
 ### Deno
 ```sh
 yarn install
+yarn build
 yarn start:deno
 ```
 
 ### Bun
 ```sh
 yarn install
+yarn build
 yarn start:bun
 ```

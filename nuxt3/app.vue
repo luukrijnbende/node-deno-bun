@@ -1,0 +1,3 @@
+<template>
+  <div>Am I Node, Deno or Bun?</div>
+</template>

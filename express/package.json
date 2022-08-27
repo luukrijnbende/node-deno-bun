@@ -6,7 +6,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start:node": "tsc && node dist/index.js",
+    "build": "tsc",
+    "start:node": "node dist/index.js",
     "start:deno": "deno run --unstable --compat --allow-all src/index.ts",
     "start:bun": "bun run src/index.ts"
   },
