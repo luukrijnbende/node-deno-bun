@@ -4,26 +4,26 @@ Ever since the introduction of Bun (a super fast JavaScript runtime) there are t
 ## Versions
 |||
 | ---- | ------------- |
-| Node | 16.16.0 (LTS) | 
-| Deno | 1.24.2        |
-| Bun  | 0.1.7 (beta)  |
+| Node | 16.17.0 (LTS) | 
+| Deno | 1.25.0        |
+| Bun  | 0.1.10 (beta) |
 
 ## Installation
 The installation commands below assume you are using a Mac and have all the usual stuff installed.
 
 ### Node
 ```sh
-nvm install 16.16.0
+nvm install 16.17.0
 ```
 
 ### Deno
 ```sh
-brew install deno@1.24.2
+curl -fsSL https://deno.land/install.sh | sh -s v1.25.0
 ```
 
 ### Bun
 ```sh
-curl https://bun.sh/install | bash -s bun-v0.1.7
+curl https://bun.sh/install | bash -s bun-v0.1.10
 ```
 
 ## Running
@@ -31,7 +31,8 @@ This repo contains several test projects.
 - [A simple script](script)
 - [A native HTTP server](http)
 - [A simple express server](express)
-- [A Nuxt.js app](nuxt)
+- [A Nuxt.js 2 app](nuxt2)
+- [A Nuxt.js 3 app](nuxt3)
 - [A Next.js app](next)
 - [An Angular Universal app](angular-universal)
 

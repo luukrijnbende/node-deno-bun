@@ -1,18 +1,17 @@
 {
   "name": "node-deno-bun-angular-universal",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "repository": "ssh://git@github.com/luukrijnbende/node-deno-bun",
+  "author": "Luuk Rijnbende",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "dev:ssr": "ng run node-deno-bun-angular-universal:serve-ssr",
-    "serve:ssr": "node dist/node-deno-bun-angular-universal/server/main.js",
-    "build:ssr": "ng build && ng run node-deno-bun-angular-universal:server",
-    "prerender": "ng run node-deno-bun-angular-universal:prerender"
+    "build": "ng build && ng run node-deno-bun-angular-universal:server",
+    "start:node": "node dist/node-deno-bun-angular-universal/server/main.js",
+    "start:deno": "deno run --unstable --compat --allow-all dist/node-deno-bun-angular-universal/server/main.js",
+    "start:bun": "bun run dist/node-deno-bun-angular-universal/server/main.js"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^14.0.0",
     "@angular/common": "^14.0.0",
